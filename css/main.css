@@ -1,0 +1,105 @@
+:root{
+    --ocean-green: #48cfad;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+/* || GENERAL */
+html{
+    font-family: "Roboto Mono", monospace;
+    font-size: 62.5%;
+}
+body{
+    position:fixed;
+    top:0;
+    bottom:0;
+    left: 0;
+    right: 0;
+
+    height: 100vh;
+    width: 100vw;
+}
+a{
+    text-decoration: none;
+    display: inline;
+    color: black;
+}
+.button{
+    background-color: var(--ocean-green);
+    padding: 1.5rem;
+    border: 1px solid white;
+    font-weight: bold;
+    font-size: 2rem;
+}
+/* || TOP HEADER */
+header{
+    display: grid;
+    grid-template-rows: 50px 110px;
+    width: 100%;   
+}
+header #header-icons-container{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+
+    background-color: var(--ocean-green);
+}
+header #header-icons-container >div{
+    display: flex;
+    margin-inline-end: 55px;
+}
+header #header-icons-container .icon{
+    margin-inline-start: 15px;
+    color:white;
+}
+
+
+header #header-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-inline: 70px 55px;
+}
+header #header-nav .logo{
+    height: 100%;
+}
+header #header-nav .logo #logo-img{
+    height: 100%;
+}
+header #header-nav #about-me-link{
+    text-decoration: underline;
+    font-size: 2rem;
+}
+
+/* ||MAIN */
+main{
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 160px);
+
+    background-image: url(../assets/img/Cover.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position-y: 10rem
+}
+
+main #main-action-call-container{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+main #main-action-call-container>p{
+    margin-block-start: -12rem;
+    font-size: 4rem;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 0 0 14px black;
+    color:white;
+}
