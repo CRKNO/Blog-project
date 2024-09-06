@@ -6,10 +6,12 @@ body{
 main{
     justify-content: center;
     align-items: center;
+
     height: auto;
     width: 100%;
     max-width: 1400px;
     margin-block-end: 4rem;
+
     background: none;
 }
 h1{
@@ -18,7 +20,7 @@ h1{
 h2{
     font-size: 2rem;
 }
-p{
+p, a{
     font-size: 1.6rem;
 }
 main #main-news-pic{
@@ -32,13 +34,16 @@ main #main-news-pic >img{
 main #news-section{
     display: flex;
     flex-direction: column;
+
     width: 80%;
 }
 main #news-section h2{
     align-self: start;
+
     width: 100%;
     margin-block-start: 4rem;
     padding-block-end: 1rem;
+
     border-block-end: 1px solid rgba(0, 0, 0, 0.250);
 }
 main #news-section article .article-title{
@@ -46,7 +51,34 @@ main #news-section article .article-title{
 }
 
 footer{
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+
+    background-color: var(--light-grey);
+}
+footer .footer-main-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 150px;
+    grid-template-rows: 150px;
+    gap: 2rem;
+    
+    width: 80%;
+    max-width: 1400px;
+
+}
+footer .footer-main-container .footer-div-container{
+    display: flex;
+    align-items: center;
+}
+footer .footer-main-container .footer-div-container .footer-img-container{
+    height: 60%;
+    margin-inline-end: 1rem;
+}
+footer .footer-main-container .footer-div-container .footer-img-container>img{
+    height: 100%;
+}
+footer .footer-main-container .footer-div-container .footer-link-name{
+    text-decoration: underline;
 }
