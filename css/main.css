@@ -75,13 +75,16 @@ header #header-nav #about-me-link{
 main{
     display: flex;
     flex-direction: column;
+}
+.index-main{
     height: calc(100vh - 160px);
-
+    
     background-image: url(../assets/img/Cover.png);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    background-position-y: 10rem
+    background-position-y: 10rem;
+
 }
 
 main #main-action-call-container{
