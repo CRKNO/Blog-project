@@ -22,7 +22,18 @@ a{
     display: inline;
     color: black;
 }
+h1{
+    font-size: 4rem;
+}
+h2{
+    font-size: 2rem;
+}
+p, a{
+    font-size: 1.6rem;
+}
 .button{
+    width: fit-content;
+    height: fit-content;
     padding: 1.5rem;
     border: 1px solid white;
     font-weight: bold;
