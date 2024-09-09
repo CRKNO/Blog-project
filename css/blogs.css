@@ -1,5 +1,6 @@
 main{
     align-items: center;
+    margin-block-end: 7vh;
 }
 main .principal-article-container{
     display: flex;
@@ -42,6 +43,7 @@ main .latest-blogposts-section {
     gap:3rem 2rem;
 
     width: 80%;
+    max-width: 1200px;
 }
 main .latest-blogposts-section h2{
     display: inline-block;
@@ -78,4 +80,21 @@ main .latest-blogposts-section article img{
     height: fit-content;
     padding: 1rem;
     border: 1px solid var(--ocean-green);
+}
+
+footer{
+    display: grid;
+    grid-template-rows: 3rem 6rem;
+
+    width: 100%;
+}
+footer div:first-of-type{
+    background-color: var(--ocean-green);
+}
+footer div:last-of-type{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    background-color: rgb(34 39 45);
 }
