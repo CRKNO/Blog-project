@@ -1,6 +1,9 @@
 :root{
     --ocean-green: #48cfad;
     --light-grey:#e6e9ed;
+    --large-size: 4rem;
+    --medium-size: 2rem;
+    --small-size: 1.6rem;
 }
 
 *{
@@ -23,13 +26,13 @@ a{
     color: black;
 }
 h1{
-    font-size: 4rem;
+    font-size: var(--large-size);
 }
 h2{
-    font-size: 2rem;
+    font-size: var(--medium-size);
 }
 p, a{
-    font-size: 1.6rem;
+    font-size: var(--small-size);
 }
 .button{
     width: fit-content;
