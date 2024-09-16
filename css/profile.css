@@ -1,0 +1,110 @@
+.presentation-section{
+    display: flex;
+    place-content: center;
+    width: 100%;
+    background-color: var(--light-grey);
+}
+.presentation-section .presentation-section-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    column-gap: 2.5rem;
+
+    width: 80%;
+    max-width: 1200px;
+    padding-block: 3rem;
+}
+.presentation-section picture img{
+    width: 100%;
+    min-width: 200px;
+}
+.presentation-section #presentation-info-container{
+    display: flex;
+    flex-direction: column;
+}
+.presentation-section #presentation-info-container #greeting-title{
+    font-weight: bold;
+    font-size: var(--medium-size);
+    margin-block-end: 1.5rem;
+}
+.projects-section{
+    display: flex;
+    justify-content: center;
+}
+.projects-section .projects-section-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-columns: auto;
+    gap: 3rem;
+    justify-items: center;
+
+    width: 80%;
+    max-width: 1200px;
+}
+.projects-section .projects-section-container h1{
+    grid-column: 1/4;
+    width: 100%;
+    
+    padding-block: 3rem;
+
+    text-align: center;
+    font-size: 2.5rem;
+    border-block-end: 1px solid var(--light-grey);
+}
+
+.projects-section .projects-section-container .project-article h2{
+    margin-block-end: 1.5rem;
+}
+
+footer{
+    margin-block-start: 10vh;
+}
+footer .contact-footer-section{
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+
+    background-color: var(--light-grey);
+}
+footer .contact-footer-section .footer-main-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 150px;
+    gap: 2rem;
+    
+    width: 80%;
+    max-width: 1400px;
+
+}
+footer .contact-footer-section .footer-main-container .footer-div-container{
+    display: flex;
+    align-items: center;
+}
+footer .contact-footer-section .footer-main-container .footer-div-container .footer-img-container{
+    height: 60%;
+    margin-inline-end: 1rem;
+}
+footer .contact-footer-section .footer-main-container .footer-div-container .footer-img-container>img{
+    height: 100%;
+}
+footer .contact-footer-section .footer-main-container .footer-div-container .footer-link-name{
+    text-decoration: underline;
+}
+
+footer .footer-lemme{
+    display: grid;
+    grid-template-rows: 3rem 6rem;
+
+    width: 100%;
+}
+footer .footer-lemme div:first-of-type{
+    background-color: var(--ocean-green);
+}
+footer .footer-lemme div:last-of-type{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    background-color: rgb(34 39 45);
+}
